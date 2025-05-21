@@ -1,13 +1,29 @@
 body {
+  width: 100vw;
+
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: futurabookc;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+  display: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "futurademic";
+  src:
+    url("./components/assets/fonts/futurademic-webfont.woff2") format("woff2"),
+    url("./components/assets/fonts/futurademic-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
 }
+@font-face {
+  font-family: "futurabookc";
+  src:
+    url("./components/assets/fonts/futurabookc-webfont.woff2") format("woff2"),
+    url("./components/assets/fonts/futurabookc-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal; 
+  }

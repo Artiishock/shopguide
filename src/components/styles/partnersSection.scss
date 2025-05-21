@@ -1,0 +1,178 @@
+.partners {
+  text-align: center;
+
+  &__title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 1.75rem;
+    color: #eb645a;
+  }
+
+  &__container {
+    height: 12rem;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    background: #eb645a;
+    padding: 1.25rem 0;
+  }
+
+  &__logo {
+    width: 6.25rem;
+    opacity: 0.3;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      width: 8.125rem;
+      opacity: 1;
+    }
+  }
+
+  &__offer {
+    margin-top: 3.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: -0.625rem;
+
+    p {
+      font-size: 1.5rem;
+      margin-bottom: -1.25rem;
+    }
+
+    &__btn {
+      margin-top: 2.5rem;
+      width: 21rem;
+      height: 3.75rem;
+      background-color: aqua;
+      border-radius: 0.625rem;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+
+      p {
+        text-transform: uppercase;
+        font-weight: 900;
+        color: #fff;
+      }
+    }
+  }
+
+  /* Стили для контейнера свайпера */
+  &__container {
+    position: relative;
+    padding: 0 2.5rem;
+  }
+
+  /* Стили для свайпера */
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Стили для слайдов */
+  .swiper-slide {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Стили для кастомных стрелок */
+  .custom-prev,
+  .custom-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: rgba(0, 0, 0, 0.201);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .custom-prev {
+    left: 0;
+  }
+
+  .custom-next {
+    right: 0;
+  }
+
+  .custom-prev img,
+  .custom-next img {
+    width: 1.25rem;
+    height: 1.25rem;
+    opacity: 0.5;
+  }
+
+  .partners__container {
+    padding: 0 0.625rem;
+  }
+
+  .custom-prev,
+  .custom-next {
+    width: 1.875rem;
+    height: 1.875rem;
+  }
+
+  .custom-prev {
+    left: 1.875rem;
+  }
+
+  .custom-next {
+    right: 1.25rem;
+  }
+
+  .custom-prev img,
+  .custom-next img {
+    width: 0.9375rem;
+    height: 0.9375rem;
+  }
+
+@media (max-width: 850px){
+   .partners {
+   &__container{
+    width: 98vw ;
+    }
+   }
+ .swiper-slide {
+   width: 100vw !important ;
+
+   } 
+}
+
+  @media (max-width: 780px) {
+    .partners {
+
+  
+     &__container{
+      width: 97vw  ;
+      }
+     }
+    .swiper-slide {
+      width: 100vw !important;
+    } 
+  }
+   @media (max-width: 500px) {
+    .partners {
+     &__container{
+      width: 95.5vw !important ;
+      }
+     }
+    .swiper-slide {
+      width: 100vw !important;
+    } 
+  }
+   
+  }
+ 
